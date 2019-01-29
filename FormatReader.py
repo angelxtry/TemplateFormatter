@@ -5,7 +5,7 @@ from pprint import pprint
 def load_format(json_file_name):
     with open(json_file_name) as json_file:
         format = json.load(json_file)
-    return format;
+    return format
 
 def make_template(format_datas):
     if format_datas['TYEP'] == 'STRING':
@@ -35,7 +35,6 @@ def func_string_template(data_attrs):
         'RIGHT': '>',
         'MID': '^',
     }
-    align_ = align_sign.get(data_attrs['ALIGN'])
     def wrapper(real_data):
         return "{:{padding}{align}{len}}".format(
             real_data,
@@ -60,7 +59,7 @@ if __name__ == '__main__':
 
     # print(f'{func_ID(data_dict["ID"])}{func_NICK(data_dict["NICK"])}')
 
-    result = '';
+    result = list()
     for item in layout:
-        result += f'{item}'
-    print(result);
+        result.append(f'{item}')
+    print(''.join(result))

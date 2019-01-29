@@ -1,0 +1,53 @@
+{
+  "COMMON": [
+    {
+      "ID": {
+        "TYPE": "STRING",
+        "LEN": 13,
+        "ALIGN": "LEFT",
+        "PADDING": ""
+      }
+    }
+  ],
+  "TYPE_A": [
+    {
+      "NAME": {
+        "TYPE": "STRING",
+        "LEN": 13,
+        "ALIGN": "LEFT",
+        "PADDING": ""
+      }
+    },
+    {
+      "PRICE1" : {
+        "TYPE": "FLOAT",
+        "LEN": 20,
+        "ALIGN": "RIGHT",
+        "PADDING": "0",
+        "DECIMAL": 10,
+	"TIMES": 100,
+        "ROUND": "ROUND"
+      }
+    }
+  ],
+  "TYPE_B": [
+    {
+      "NAME": {
+        "TYPE": "STRING",
+        "LEN": 13,
+        "ALIGN": "RIGHT",
+        "PADDING": ""
+      }
+    },
+    {
+      "PRICE1" : {
+        "TYPE": "INTEGER",
+        "LEN": 20,
+        "ALIGN": "RIGHT",
+        "PADDING": "0",
+        "ROUND": "ROUND"
+      }
+    }
+  ],
+  "DESCRIPTION": "ABC Format"
+}
